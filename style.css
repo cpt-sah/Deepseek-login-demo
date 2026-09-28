@@ -1,0 +1,180 @@
+:root {
+    --container-width: 336px;
+    --deepseek-blue: #3964fe;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container {
+    width: var(--container-width);
+    text-align: center;
+    transform: translateY(-20px);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 48px;
+}
+.deepseek-logo {
+    width: 182px;
+    height: 28px;
+
+    color: var(--deepseek-blue);
+}
+.input-box {
+    width: 100%;
+    height: 48px;
+
+    margin-bottom: 22px;
+    padding: 0 18px;
+
+    background-color:rgb(249, 250, 251);
+
+    border: 1px solid #a5a9b360;
+    border-radius: 26px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
+
+.input-box::placeholder {
+    color: #a5a9b3;
+}
+.input-box:focus {
+    outline: 1px solid var(--deepseek-blue);
+}
+.password-box {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.password-box .input-box {
+    margin-bottom: 0;
+    padding-right: 45px;
+}
+
+.eye-icon {
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+
+    color: rgb(15, 17, 21);
+    cursor: pointer;
+}
+
+.legal-text {
+    margin-top: 10px;
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: #747373;
+}
+
+.legal-text a {
+    color: #252525;
+    text-decoration: underline;
+}
+
+.legal-text a:hover {
+    color: var(--deepseek-blue);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+
+.links a {
+    color: var(--deepseek-blue);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    height: 42px;
+
+    border: none;
+    border-radius: 999px;
+
+    background-color: var(--deepseek-blue);
+    color: white;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.login-button:hover {
+    opacity: 0.92;
+}
+.social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;    
+    font-size: 12px;
+}
+
+.social-login a {
+    color: rgb(129, 133, 140);
+    text-decoration: underline;
+}
+.social-login a:hover {
+    color: var(--deepseek-blue);
+}
+.divider {
+    color: #ccc7c7;
+}
+
+.footer {
+    position: fixed;
+
+    bottom: 22px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #aDB2B8;
+}
+.footer a {
+    color: #aDB2B8;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
